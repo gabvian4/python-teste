@@ -1,0 +1,21 @@
+qnt=0
+valor=0
+print("COD           NOME                VALOR")
+print(" 1          kg da carne        R$ 16.00")
+print(" 2          kg do peixe        R$ 15.50")
+print(" 3          sabão em barra      R$ 4.00")
+print(" 4          kg da maçã pera     R$ 7.99")
+itens=int(input("Digite a quantidade de itens únicos que deseja comprar: "))
+while itens >0:
+    codigo=int(input("Digite o codigo do ítem: "))
+    qnt = int(input("Digite a quantidade que voce deseja: "))
+    if codigo==1:
+        valor+=qnt*16.00
+    elif codigo==2:
+        valor+=qnt*15.50 
+    elif codigo==3:
+        valor+=qnt*4.00
+    elif codigo==4:
+        valor+=qnt*7.99
+    itens-=1
+print(f"A compra total custou R$ {valor:.2f}")
